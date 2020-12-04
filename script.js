@@ -1,5 +1,10 @@
 let viewport = document.getElementById("viewport");
 let style = window.getComputedStyle(viewport);
+let carreRouge = document.createElement("div");
+carreRouge.style.width = "50px";
+carreRouge.style.height = "50px";
+carreRouge.style.backgroundColor = "red";
+viewport.appendChild(carreRouge);
 
 document.getElementById('up').addEventListener('click',function() {
     let t = parseInt(document.getElementById('kenny').style.top);
@@ -31,3 +36,5 @@ document.getElementById('down').addEventListener('click',function() {
     if (t < 468)
     document.getElementById('kenny').style.top = t + 'px';
 });
+
+

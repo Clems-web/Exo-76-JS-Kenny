@@ -4,6 +4,7 @@
     width: 500px;
     margin: auto;
     border: 5px solid;
+    box-sizing: border-box;
 }
 
 #kenny {
