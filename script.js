@@ -37,4 +37,11 @@ document.getElementById('down').addEventListener('click',function() {
     document.getElementById('kenny').style.top = t + 'px';
 });
 
+let kennyX = parseInt(document.getElementById("kenny").style.left);
+let kennyY = parseInt(document.getElementById("kenny").style.top);
+let heightCarreRouge = parseInt(carreRouge.style.height);
+let widthCarreRouge = parseInt(carreRouge.style.width);
 
+if ((kennyX <= widthCarreRouge) && (kennyY <= heightCarreRouge)) {
+    alert("Espèce d'enfoiré !")
+}
